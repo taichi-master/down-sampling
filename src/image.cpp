@@ -57,7 +57,7 @@ uint* Image::downSample (int l) {
   int* L = getL_(l);
   int* extents = Image::extents_(_dimension, L);
   int N = Image::size(_dimension, extents);
-  int T = _size / N, S = sqrt(T);  // Trunk and Section sizes.
+  int T = _size / N, S = pow(2, l);  // Trunk and Section sizes.
 
   _downSamples[l-1] = new uint[N];
   uint (*D)[extents[1]] = (uint (*)[extents[1]]) _downSamples[l-1];
