@@ -25,3 +25,7 @@ the rest data is the image content with the size of (2^2 x 2^3 = 4 x 8 = 32)
 
 ## Limitation:
 For demonstration purpose the source code only work for 2-dimension array image.  For multi-dimension, code will need to be modified and re-compiled.
+
+License:
+-------
+MIT &copy; 2017 Kei Sing Wong
